@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar  a{
+  text-decoration: none;
+  color: black;
+  
+}
+.display-flex{
+  display: flex;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+  
+}
+.navbar{
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+
+}
+.logo{
+    width: 135px;
+    height: 82px;
+}
+.home{
+    font-weight: bold;
+}
+/*colors*/
+.orange{
+    color: #E95A08;
+}
+.light-color-text{
+    color: rgba(137, 135, 161, 1);
+}
+.cart{
+    color: #000000;
+}
+.light-text{
+   color:  rgba(0, 0, 0, 0.5); 
+}
+
+/*banner related style*/
+.banner{
+    max-width: 1440px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.banner-header{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.banner-description{
+    font-size: 22px;
+}
+.banner-img{
+    width: 100%;
+}
+.our-plants{
+    max-width: 1140px;
+    margin: 100px auto;
+    text-align: center;
+    
+}
+.our-plant-title{
+    font-size: 3.1rem;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .navbar, .nav-link{
+ align-items: center;
+   
+  }
+  .cart{
+    align-items: center;
+    
+  }
+  .home, .shop, .about{
+    display: none;
+   
+}
+.banner{
+    flex-direction: column-reverse;
+    gap: 10px;
+    width: 361px;
+    
+}
+
+  
+}
