@@ -73,9 +73,13 @@
 .banner-img{
     width: 100%;
 }
+
+/*our plant related style*/
 .our-plants{
     max-width: 1140px;
-    margin: 100px auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     
 }
@@ -83,8 +87,58 @@
     font-size: 3.1rem;
     font-weight: bold;
 }
+.card-picture{
+    width: 270px;
+    height: 322px;
+}
+.product-grid{
+    max-width: 1140px;
+    margin: 0 auto;
 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 5px;
+ text-align: center;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
+}
+.btn{
+    background-color: #E95A08;
+    color: white;
+    width: 270px;
+    height: 50px;
+}
+
+/*flower lover style*/
+.lover-header{
+    display: flex;
+    gap: 60px;
+    max-width: 1140px;
+    margin: 220px auto;
+}
+.lover-title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.flower-section{
+    margin-left: 10px;
+}
+.lover-img{
+    position: relative;
+  display: inline-block;
+}
+.trusted-badge{
+position: absolute;
+  top: -120px;
+  right: -60px;
+  width: 286px; 
+  height: 286px;
+
+}
+.main-img{
+  display: block;
+  
+}
 
 @media screen and (max-width: 576px) {
   .navbar, .nav-link{
@@ -105,6 +159,11 @@
     width: 361px;
     
 }
+.product-grid{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
 
   
 }
