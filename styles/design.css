@@ -1,5 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -7,116 +9,197 @@
   font-style: normal;
 }
 
+.noto-sans-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
 
-.navbar{
+/* ================== GLOBAL RESET ================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1140px;
+  margin: 0 390px;
+  padding: 15px;
+  flex-wrap: wrap;
 }
 
-.navbar  a{
+.navbar a {
   text-decoration: none;
-  color: black;
   
 }
-.display-flex{
+
+.nav-links {
   display: flex;
-}
-.nav-item{
-  list-style: none;
-  margin-right: 30px;
-  
-}
-.navbar{
-  max-width: 1440px;
-  margin: 0 auto;
-  align-items: center;
-
-}
-.logo{
-    width: 135px;
-    height: 82px;
-}
-.home{
-    font-weight: bold;
-}
-/*colors*/
-.orange{
-    color: #E95A08;
-}
-.light-color-text{
-    color: rgba(137, 135, 161, 1);
-}
-.cart{
-    color: #000000;
-}
-.light-text{
-   color:  rgba(0, 0, 0, 0.5); 
-}
-
-/*banner related style*/
-.banner{
-    max-width: 1440px;
-    margin: 100px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.banner-header{
-    font-weight: bold;
-    font-size: 4rem;
-}
-.banner-description{
-    font-size: 22px;
-}
-.banner-img{
-    width: 100%;
-}
-
-/*our plant related style*/
-.our-plants{
-    max-width: 1140px;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-.our-plant-title{
-    font-size: 3.1rem;
-    font-weight: bold;
-}
-.card-picture{
-    width: 270px;
-    height: 322px;
-}
-.product-grid{
-    max-width: 1140px;
-    margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  flex-wrap: wrap;
   gap: 20px;
- text-align: center;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-}
-.btn{
-    background-color: #E95A08;
-    color: white;
-    width: 270px;
-    height: 50px;
 }
 
-/*flower lover style*/
-.lover-header{
-    display: flex;
-    gap: 60px;
-    max-width: 1140px;
-    margin: 220px auto;
+.nav-item {
+  list-style: none;
 }
-.lover-title{
+
+.logo {
+  width: 135px;
+  height: 82px;
+}
+
+.home {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* ================== UTILITY CLASSES ================== */
+.orange {
+  color: #E95A08;
+}
+
+.light-color-text {
+  color: rgba(137, 135, 161, 1);
+}
+
+.cart {
+  color: #000000;
+}
+
+.light-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ================== BANNER ================== */
+.banner {
+  max-width: 1140px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.banner-header {
+    text-align: left;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.banner-description {
+  font-size: 22px;
+  text-align: left;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ================== OUR PLANTS ================== */
+.our-plants {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.our-plant-title {
+  font-size: 3.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ================== PRODUCTS ================== */
+.product-grid {
+  max-width: 1140px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.card-picture {
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #E95A08;
+  color: white;
+  width: 100%;
+  max-width: 270px;
+  height: 50px;
+  margin: 10px auto;
+  border: none;
+}
+
+/* ================== LOVER SECTION ================== */
+
+
+.lover-header {
+  display: flex;
+  gap: 60px;
+  gap: 60px;
+  max-width: 1140px;
+  margin: 220px auto;
+  padding: 0 15px;
+  justify-content: center;
+
+}
+
+.lover-img {
+  position: relative;
+  text-align: center;
+}
+
+.main-img {
+  width: 540px;
+  height: 597px;
+
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -120px;
+  right: -60px;
+  width: 286px;
+  height: 286px;
+}
+
+.lover-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.flower-section {
+  text-align: left;
+}
+
+
+/*
+
+ .lover-title{
     font-size: 3rem;
     font-weight: bold;
 }
@@ -139,30 +222,27 @@ position: absolute;
   display: block;
  
 }
+*/
 
-
-
-/*latest offer section styles*/
-
+/* ================== OFFER SECTION ================== */
 .offer-section {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .offer-header {
   text-align: center;
   margin-bottom: 40px;
 }
-
-.offer-header h1 {
-  font-size: 3rem;
+.offer-h1{
+     font-size: 3rem;
   margin-bottom: 10px;
-  color: #222;
+  font-weight: bold;
 }
-
-.offer-header p {
-  font-size: 1.3rem;
-  color: #555;
+.offer-header p{
+    font-size: 1.3rem;
+    margin-bottom: 80px;
 }
 
 .offer-container {
@@ -177,7 +257,6 @@ position: absolute;
   gap: 20px;
   flex: 1;
   min-width: 200px;
-  
 }
 
 .offer-card {
@@ -196,7 +275,6 @@ position: absolute;
 
 .offer-card.small {
   height: 160px;
-  
 }
 
 .offer-card.large {
@@ -204,19 +282,6 @@ position: absolute;
   height: 340px;
   min-width: 300px;
 }
-
-.offer-text {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90%;
-}
-
-.offer-text h2, .offer-text h3 {
-  margin: 0 0 10px;
-  font-weight: 600;
-}
-
 .offer-text a {
   text-decoration: underline;
   color: white;
@@ -224,8 +289,17 @@ position: absolute;
   font-size: 14px;
 }
 
+.offer-text {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
 
-/*join us section design*/
+
+
+
+
+/* ================== JOIN US SECTION ================== */
 .hero-section {
   margin: 100px 0;
   position: relative;
@@ -236,9 +310,8 @@ position: absolute;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 60px 15px;
 }
-
-
 .content {
   position: relative;
   color: white;
@@ -246,12 +319,42 @@ position: absolute;
   width: 100%;
   padding: 0 20px;
 }
-
-h1 {
+.hero-h1{
   font-size: 3rem;
   margin-bottom: 30px;
   font-weight: 700;
 }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.form input {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form button {
+  padding: 15px 25px;
+  font-size: 16px;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  width: 100%;
+  max-width: 150px;
+}
+.form button:hover {
+  background-color: #d94e1f;
+}
+
+/*
+
 
 .form {
   display: flex;
@@ -284,8 +387,8 @@ h1 {
 }
 
 
-
-/*footer part style*/
+*/
+/* ================== FOOTER ================== */
 .footer {
   background-color: #f8fafd;
   padding: 40px 60px;
@@ -353,12 +456,22 @@ h1 {
 }
 
 
-
-
+/* ================== MEDIA QUERIES ================== */
 @media screen and (max-width: 576px) {
-  .navbar, .nav-link{
- align-items: center;
+
+
+/*Style for navigation*/
+    .navbar, .nav-link{
+    align-items: center;
+    margin: 0;
+
    
+  }
+   .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    margin-right: 0;
   }
   .cart{
     align-items: center;
@@ -366,36 +479,135 @@ h1 {
   }
   .home, .shop, .about{
     display: none;
-   
 }
+/*style for banner*/
+
 .banner{
     flex-direction: column-reverse;
-    gap: 10px;
+    gap: 20px;
     width: 361px;
     
+}
+
+
+.banner-img{
+    width: 393px;
+    height: 245px;
+  
+}
+ 
+  .banner-header {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .banner-description {
+    font-size: 0.875rem;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 30px;
+
+    
+  }
+.hide{
+    display: none;
+}
+/*our plants related style*/
+.our-plant-title{
+    font-size: 1.5rem;
 }
 .product-grid{
     grid-template-columns: repeat(2, 1fr);
     box-shadow: none;
 }
+/*lover related style*/
 .lover-header{
     flex-direction: column;
     margin: none;
    
 }
 .main-img{
+    width: 100%;
+    height: auto;
     
 }
 .trusted-badge{
     display: none;
 }
+.lover-title{
+    font-size: 1.5rem;
+}
+
+.list{
+    margin-left: 20px;
+}
+  /*offer related style*/
+ .offer-h1{
+     font-size: 1.5rem;
+  font-weight: bold;
+}
+.offer-header p{
+    font-size: 0.875rem;
+    margin-bottom: 80px;
+}
+
+  .offer-card.small, .offer-card.large {
+    height: 200px;
+  }
+
+  .offer-card small{
+    border-radius: none;
+  }
+ /*hero section style*/
+ .hero-section{
+    width: 100%;
+    height: 276px;
+ }
+ .content{
+    max-width: 393px;
+    margin: 0 auto;
+ }
+ .hero-h1{
+ font-size: 1.25rem;
+ }
+
+
+.form input {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  max-width: 218px;
+}
+
+.form button {
+  max-width: 103px;
+  align-items: center;
+  text-align: center;
+
+}
+
+.form button:hover {
+  background-color: #d94e1f;
+}
 .footer{
     flex-direction: column;
 }
 .footer-links{
+    gap: 20px;
     flex-direction: column;
 }
+.footer-links li{
+    margin: 20px auto;
+}
 
-
+.footer-links a:hover {
+  color: #ff7a59;
+}
+.footer-left p {
+  
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
   
 }
