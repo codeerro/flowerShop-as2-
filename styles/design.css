@@ -97,7 +97,7 @@
 
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 5px;
+  gap: 20px;
  text-align: center;
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
@@ -137,8 +137,153 @@ position: absolute;
 }
 .main-img{
   display: block;
+ 
+}
+
+
+
+/*latest offer section styles*/
+
+.offer-section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.offer-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.offer-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.offer-header p {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 200px;
   
 }
+
+.offer-card {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.offer-card.small {
+  height: 160px;
+  
+}
+
+.offer-card.large {
+  flex: 2;
+  height: 340px;
+  min-width: 300px;
+}
+
+.offer-text {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.offer-text h2, .offer-text h3 {
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.offer-text a {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+/*join us section design*/
+.hero-section {
+  margin: 100px 0;
+  position: relative;
+  height: 100vh;
+  background-image: url('/assets/news-letter-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.content {
+  position: relative;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form input {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 70%;
+  width: 644px;
+  height: 50px;
+}
+
+.form button {
+  padding: 15px 25px;
+  font-size: 16px;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  
+}
+
+.form button:hover {
+  background-color: #d94e1f;
+}
+
 
 @media screen and (max-width: 576px) {
   .navbar, .nav-link{
@@ -160,7 +305,19 @@ position: absolute;
     
 }
 .product-grid{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: none;
+}
+.lover-header{
+    flex-direction: column;
+    margin: none;
+   
+}
+.main-img{
+    
+}
+.trusted-badge{
+    display: none;
 }
 
 
