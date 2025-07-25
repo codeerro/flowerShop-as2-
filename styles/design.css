@@ -326,8 +326,8 @@ position: absolute;
 }
 
 .form {
+  
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   
 }
@@ -353,42 +353,8 @@ position: absolute;
   background-color: #d94e1f;
 }
 
-/*
 
-
-.form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.form input {
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  width: 70%;
-  width: 644px;
-  height: 50px;
-}
-
-.form button {
-  padding: 15px 25px;
-  font-size: 16px;
-  background-color: #E95A08;
-  color: white;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  
-}
-
-.form button:hover {
-  background-color: #d94e1f;
-}
-
-
-*/
-/* ================== FOOTER ================== */
+/* FOOTER */
 .footer {
   background-color: #f8fafd;
   padding: 40px 60px;
